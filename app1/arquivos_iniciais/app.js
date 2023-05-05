@@ -20,8 +20,8 @@ class Bd {
     }
 
     getProximoId() {
-        let proximoId = localStorage.getItem('id') //null
-        console.log(parseInt(proximoId) + 1)
+        let proximoId = localStorage.getItem('id')
+        return parseInt(proximoId) + 1
     }
 
     gravar(d) {
