@@ -64,10 +64,16 @@ function cadastrarDespesa() {
 
     if(despesa.validarDados()) {
         bd.gravar(despesa)
+
+        document.getElementById('modal_titulo').innerHTML = 'Registro inserido com sucesso'
+
         //dialog de sucesso
         $('#modalRegistraDespesa').modal('show')
     } else {
         //dialog de erro
+
+        document.getElementById('modal_titulo').innerHTML = 'Erro na inclusão do registro'
+
         $('#modalRegistraDespesa').modal('show')
     }
 }
