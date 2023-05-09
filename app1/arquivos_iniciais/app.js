@@ -29,7 +29,7 @@ class Bd {
 
         localStorage.setItem(id, JSON.stringify(d))
 
-        localStorage.setItem('id,' id)
+        localStorage.setItem('id', id)
     }
 }
 
