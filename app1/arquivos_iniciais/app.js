@@ -66,13 +66,14 @@ function cadastrarDespesa() {
         bd.gravar(despesa)
 
         document.getElementById('modal_titulo').innerHTML = 'Registro inserido com sucesso'
+        document.getElementById('modal_titulo_div').className = 'modal-header text-success'
 
         //dialog de sucesso
         $('#modalRegistraDespesa').modal('show')
     } else {
-        //dialog de erro
 
         document.getElementById('modal_titulo').innerHTML = 'Erro na inclusão do registro'
+        document.getElementById('modal_titulo_div').className = 'modal-header text-danger'
 
         $('#modalRegistraDespesa').modal('show')
     }
