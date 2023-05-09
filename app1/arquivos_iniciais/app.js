@@ -52,8 +52,6 @@ function cadastrarDespesa() {
     let tipo = document.getElementById('tipo')
     let descricao = document.getElementById('descricao')
     let valor = document.getElementById('valor')
-
-    console.log(ano.value, mes.value, dia.value, tipo.value, descricao.value, valor.value)
     
     let despesa = new Despesa(
         ano.value,
@@ -70,7 +68,7 @@ function cadastrarDespesa() {
         console.log('Dados válidos')
     } else {
         //dialog dde erro
-        console.log('Dados inválidos')
+        $('#erroGravacao').modal('show')
     }
 }
 
