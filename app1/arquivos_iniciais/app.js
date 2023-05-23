@@ -92,10 +92,10 @@ function cadastrarDespesa() {
     if(despesa.validarDados()) {
         bd.gravar(despesa)
         //dialog de sucesso
-        $('#sucessoGravacao').modal('show')
+        $('#modalRegistraDespesa').modal('show')
     } else {
         //dialog de erro
-        $('#erroGravacao').modal('show')
+        $('#modalRegistraDespesa').modal('show')
     }
 
 }
