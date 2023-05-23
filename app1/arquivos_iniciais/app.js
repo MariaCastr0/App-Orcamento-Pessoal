@@ -94,6 +94,7 @@ function cadastrarDespesa() {
 
         document.getElementById('modal_titulo').innerHTML = 'Registro inserido com sucesso'
         document.getElementById('modal_titulo_div').className = 'modal-header text-success'
+        document.getElementById('modal_conteudo').innerHTML = 'Despesa foi cadastrada com sucesso'
         
 
         //dialog de sucesso
@@ -104,6 +105,8 @@ function cadastrarDespesa() {
         
         document.getElementById('modal_titulo').innerHTML = 'Erro na inclusão do Registro'
         document.getElementById('modal_titulo_div').className = 'modal-header text-danger'
+
+        document.getElementById('modal_conteudo').innerHTML = 'Erro na gravação, verifique se todos os campos foram preenchidos corretamente'
 
         $('#modalRegistraDespesa').modal('show')
     }
