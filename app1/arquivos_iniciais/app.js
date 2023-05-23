@@ -91,3 +91,11 @@ function cadastrarDespesa() {
 
     if(despesa.validarDados()) {
         //bd.gravar(despesa)
+        //dialog de sucesso
+        console.log('Dados válidos')
+    } else {
+        //dialog de erro
+        $('#erroGravacao').modal('show')
+    }
+
+}
