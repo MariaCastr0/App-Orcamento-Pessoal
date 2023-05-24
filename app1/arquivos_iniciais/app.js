@@ -63,7 +63,7 @@ class Bd {
             despesas.push(despesa)
         }
 
-        console.log(despesas)
+        return despesas
 
     }
 
@@ -115,4 +115,13 @@ function cadastrarDespesa() {
         $('#modalRegistraDespesa').modal('show')
     }
 
+}
+
+function carregaListaDespesas() {
+
+    let despesas = Array()
+
+    despesas = bd.recuperarTodosRegistros()
+
+    console.log(despesas)
 }
