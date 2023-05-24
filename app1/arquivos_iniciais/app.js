@@ -146,8 +146,14 @@ despesas.forEach(function(d) {
     //criar as colunas (td)
     linha.insertCell(0).innerHTML = `${d.dia} ${d.mes} ${d.ano}`
     linha.insertCell(1).innerHTML = d.tipo
-    linha.insertCell(2)
-    linha.insertCell(3)
+
+    //ajustar o tipo
+    switch(parseInt(d.tipo)) {
+        case 1
+    }
+
+    linha.insertCell(2).innerHTML = d.descricao
+    linha.insertCell(3).innerHTML = d.valor
 }) 
 
 }
