@@ -129,19 +129,25 @@ function carregaListaDespesas() {
 
 /*
 <tr>
-    <td>15/03/2018</td>
-    <td>Alimentação</td>
+    0 = <td>15/03/2018</td>
+    1 = <td>Alimentação</td>
     <td>Compras do mês</td>
     <td>500.50</td>
 */
 
 //percorrer o array despesas, listando cada despesa de forma dinâmica
 despesas.forEach(function(d) {
+
+    console.log(d)
     
     //criando a linha (tr)
     let linha = listaDespesas.insertRow()
 
     //criar as colunas (td)
+    linha.insertCell(0).innerHTML = `${d.dia} ${d.mes} ${d.ano}`
+    linha.insertCell(1).innerHTML = d.tipo
+    linha.insertCell(2)
+    linha.insertCell(3)
 }) 
 
 }
