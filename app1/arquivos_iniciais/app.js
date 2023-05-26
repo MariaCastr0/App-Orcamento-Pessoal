@@ -85,31 +85,31 @@ class Bd {
         //mes
         if(despesa.mes != '') {
             console.log('filtro de mes')
-            despesasFiltradas = despesasFiltradas.filter(d => d.mes == despesa.ano)
+            despesasFiltradas = despesasFiltradas.filter(d => d.mes == despesa.mes)
         }
 
         //dia
         if(despesa.dia != '') {
             console.log('filtro de dia')
-            despesasFiltradas = despesasFiltradas.filter(d => d.dia == despesa.ano)
+            despesasFiltradas = despesasFiltradas.filter(d => d.dia == despesa.dia)
         }
 
         //tipo
         if(despesa.tipo != '') {
             console.log('filtro de tipo')
-            despesasFiltradas = despesasFiltradas.filter(d => d.tipo == despesa.ano)
+            despesasFiltradas = despesasFiltradas.filter(d => d.tipo == despesa.tipo)
         }
 
         //descricao
         if(despesa.descricao != '') {
             console.log('filtro de descricao')
-            despesasFiltradas = despesasFiltradas.filter(d => d.descricao == despesa.ano)
+            despesasFiltradas = despesasFiltradas.filter(d => d.descricao == despesa.descricao)
         }
 
         //valor
         if(despesa.valor != '') {
             console.log('filtro de valor')
-            despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.ano)
+            despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor)
         }
     }
 
