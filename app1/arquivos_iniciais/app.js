@@ -101,6 +101,15 @@ function cadastrarDespesa() {
 
         //dialog de sucesso
         $('#modalRegistraDespesa').modal('show')
+
+        ano.value = ''
+        mes.value = ''
+        dia.value = ''
+        tipo.value = ''
+        descricao.value = ''
+        valor.value = ''
+
+
     } else {
         //dialog de erro
 
@@ -144,7 +153,7 @@ despesas.forEach(function(d) {
     let linha = listaDespesas.insertRow()
 
     //criar as colunas (td)
-    linha.insertCell(0).innerHTML = `${d.dia} ${d.mes} ${d.ano}`
+    linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
     
 
     //ajustar o tipo
