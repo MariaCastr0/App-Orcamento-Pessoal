@@ -77,6 +77,9 @@ class Bd {
         console.log(despesa)
 
         //ano
+        if(despesa.ano != '') {
+            console.log(despesasFiltradas.filter(d => d.ano == despesa.ano))
+        }
 
         //mes
 
