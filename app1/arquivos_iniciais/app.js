@@ -241,6 +241,18 @@ function pesquisarDespesa() {
 
     let  despesas = bd.pesquisar(despesa)
 
+    //selecionando o elemento tbody da tabela
+    let listaDespesas = document.getElementById('listaDespesas')
+    listaDespesas.innerHTML = ''
+
+
+    /*
+    <tr>
+        0 = <td>15/03/2018</td>
+        1 = <td>Alimentação</td>
+        <td>Compras do mês</td>
+        <td>500.50</td>
+    */
 
     //percorrer o array despesas, listando cada despesa de forma dinâmica
 despesas.forEach(function(d) {
