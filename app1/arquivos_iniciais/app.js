@@ -114,7 +114,7 @@ class Bd {
             despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor)
         }
     
-        console.log(despesasFiltradas)
+        return despesasFiltradas
     }
 
 }
