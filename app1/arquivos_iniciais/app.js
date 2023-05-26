@@ -192,6 +192,8 @@ function pesquisarDespesa() {
 
     let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
 
+    bd.pesquisar(despesa)
+
     
 }
 
