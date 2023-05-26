@@ -176,9 +176,9 @@ function cadastrarDespesa() {
 
 }
 
-function carregaListaDespesas(despesas = Array()) {
+function carregaListaDespesas(despesas = Array(), filtro = false) {
 
-    if(despesas.length == 0) {
+    if(despesas.length == 0 && filtro == false) {
     despesas = bd.recuperarTodosRegistros()
     }
     
@@ -242,7 +242,7 @@ function pesquisarDespesa() {
 
     let  despesas = bd.pesquisar(despesa)
 
-    this.carregaListaDespesas(despesas)
+    this.carregaListaDespesas(despesas, true)
 
     
 
