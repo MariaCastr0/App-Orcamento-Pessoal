@@ -178,10 +178,8 @@ function cadastrarDespesa() {
 
 function carregaListaDespesas(despesas = Array()) {
 
-    if(despesas.length == 0)
-
-    despesas = bd.recuperarTodosRegistros() {
-        despesas = bd.recuperarTodosRegistros()
+    if(despesas.length == 0) {
+    despesas = bd.recuperarTodosRegistros()
     }
     
     //selecionando o elemento tbody da tabela
