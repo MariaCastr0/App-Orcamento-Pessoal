@@ -78,18 +78,33 @@ class Bd {
 
         //ano
         if(despesa.ano != '') {
-            console.log(despesasFiltradas.filter(d => d.ano == despesa.ano))
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
         }
 
         //mes
+        if(despesa.mes != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+        }
 
         //dia
+        if(despesa.dia != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+        }
 
         //tipo
+        if(despesa.tipo != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+        }
 
         //descricao
+        if(despesa.descricao != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+        }
 
         //valor
+        if(despesa.valor != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+        }
     }
 
 }
