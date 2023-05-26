@@ -73,8 +73,10 @@ class Bd {
 
         despesasFiltradas = this.recuperarTodosRegistros()
 
-        console.log(despesasFiltradas)
         console.log(despesa)
+
+        console.log(despesasFiltradas)
+        
 
         //ano
         if(despesa.ano != '') {
@@ -111,6 +113,8 @@ class Bd {
             console.log('filtro de valor')
             despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor)
         }
+    
+        console.log(despesasFiltradas)
     }
 
 }
