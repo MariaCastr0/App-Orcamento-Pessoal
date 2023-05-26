@@ -186,6 +186,7 @@ function carregaListaDespesas(despesas = Array()) {
     
     //selecionando o elemento tbody da tabela
     let listaDespesas = document.getElementById('listaDespesas')
+    listaDespesas.innerHTML = ''
 
 
 /*
