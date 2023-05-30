@@ -64,6 +64,13 @@ class Bd {
             despesas.push(despesa)
         }
 
+        // Ordenar as despesas por data de lançamento (da menor para a maior)
+        despesas.sort((a, b) => {
+            const dataA = new Date(a.ano, a.mes - 1, a.dia);
+            const dataB = new Date(b.ano, b.mes - 1, b.dia);
+            return dataA - dataB;
+    });
+
         return despesas
 
     }
