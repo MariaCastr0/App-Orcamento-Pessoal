@@ -240,7 +240,7 @@ despesas.forEach(function(d) {
         //remover a despesa
         let id = this.id.replace('id_despesa_', '')
 
-        alert(id)
+        //alert(id)
 
         bd.remover(id)
 
